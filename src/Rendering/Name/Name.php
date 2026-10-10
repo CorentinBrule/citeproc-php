@@ -203,11 +203,11 @@ class Name implements HasParent
     {
         $text = "";
 
-        if (!isset($name->family)) {
-            return $text;
+        if (isset($name->literal)) {
+            $text = $name->literal;
+        }else{
+            $text = $this->nameOrder($name, $rank);
         }
-
-        $text = $this->nameOrder($name, $rank);
 
         // Check if text contains nbsp prefixed or followed by normal space
         $text = htmlentities($text);
@@ -241,6 +241,10 @@ class Name implements HasParent
         if (isset($name->{'suffix'})) {
             $nameObj->{'suffix'} = $name->{'suffix'};
         }
+        if (isset($name->literal)) {
+            $nameObj->literal = $name->literal;
+        }
+        
         return $nameObj;
     }
 

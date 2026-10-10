@@ -1,4 +1,7 @@
-# PKP welcomes citeproc-php to our GitHub organization! # 
+# fork for kirby-citeproc plugin # 
+
+>  allow the optional use of CSL styles in composer
+> fix literal names
 
 The Public Knowledge Project has taken over stewardship of citeproc-php from @seboettg. Thanks for your many years of hard work, Sebastian!
 Follow the discussion leading to this change at [https://github.com/pkp/citeproc-php/discussions/200](https://github.com/pkp/citeproc-php/discussions/200).

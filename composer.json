@@ -27,7 +27,6 @@
         }
     },
     "require": {
-        "citation-style-language/styles": "v0.0.*",
         "citation-style-language/locales": "v0.0.*",
         "seboettg/collection": "^3.1",
         "myclabs/php-enum": "^1.8",
@@ -38,13 +37,13 @@
         "ext-intl": "*"
     },
     "require-dev": {
-        "php-coveralls/php-coveralls": "^1",
         "phpunit/phpunit": "^8.5",
         "squizlabs/php_codesniffer": "^3.5",
         "phpmd/phpmd": "^2.8"
     },
     "suggest": {
-      "symfony/polyfill-mbstring": "^1.10"
+        "citation-style-language/styles": "v0.0.*",
+        "symfony/polyfill-mbstring": "^1.10"
     },
     "scripts": {
         "post-install-cmd": [
